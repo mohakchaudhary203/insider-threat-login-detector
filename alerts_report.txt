@@ -1,0 +1,28 @@
+Report Generated At: 2026-04-16 23:20:28
+
+--- ALERTS ---
+
+User: john | Issue: Odd hour login | Severity: Medium
+User: john | Issue: Multiple locations in short time | Severity: High
+User: alice | Issue: Multiple rapid logins | Severity: Low
+User: bob | Issue: Odd hour login | Severity: Medium
+User: david | Issue: Odd hour login | Severity: Medium
+User: david | Issue: Multiple locations in short time | Severity: High
+
+Total Unique Alerts: 6
+
+--- SUMMARY ---
+
+john → High: 1, Medium: 1, Low: 0
+alice → High: 0, Medium: 0, Low: 1
+bob → High: 0, Medium: 1, Low: 0
+david → High: 1, Medium: 1, Low: 0
+
+--- RISK SCORES ---
+
+john → Risk Score: 80
+david → Risk Score: 80
+bob → Risk Score: 30
+alice → Risk Score: 10
+
+Most Suspicious User: john (Score: 80)
