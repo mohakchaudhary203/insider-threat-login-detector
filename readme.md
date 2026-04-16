@@ -1,42 +1,25 @@
-# Insider Threat Login Pattern Detector
+# Insider Threat Login Detector
 
 ## 📌 Overview
-This project simulates a SOC tool that detects suspicious login behavior using rule-based analysis.
+A Python-based SOC tool that detects suspicious login behavior and potential insider threats using rule-based anomaly detection.
 
 ## 🚀 Features
-- Detects odd-hour logins
-- Identifies impossible travel (location anomaly)
-- Detects rapid login attempts
-- Generates alert severity levels
-- Calculates risk score per user
-- Identifies most suspicious user
-- Saves report to file
+- Detects odd-hour logins  
+- Identifies impossible travel (multiple locations in short time)  
+- Detects rapid login attempts  
+- Generates alert severity (Low / Medium / High)  
+- Provides user-wise summary and risk insights  
+
+## 🧠 Detection Logic
+- Login during unusual hours (0–6 AM)  
+- Multiple locations within short time window  
+- High frequency login attempts  
 
 ## 📁 Project Structure
 insider-threat-login-detector/
-│── logs.csv  
 │── detector.py  
+│── logs.csv  
 │── README.md  
-│── alerts_report.txt  
-
-## 📊 Sample Output
-
---- ALERTS ---
-
-User: john | Issue: Odd hour login | Severity: Medium  
-User: john | Issue: Multiple locations in short time | Severity: High  
-
---- SUMMARY ---
-
-john → High: 1, Medium: 1, Low: 0  
-
---- RISK SCORES ---
-
-john → Risk Score: 80 (CRITICAL)  
-
---- TOP THREAT USER ---
-
-Most Suspicious User: john (Score: 80)
 
 ## ▶️ How to Run
 ```bash
