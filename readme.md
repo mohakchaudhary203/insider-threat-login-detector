@@ -8,7 +8,7 @@ A Python-based SOC tool that detects suspicious login behavior and potential ins
 - Identifies impossible travel (multiple locations in short time)  
 - Detects rapid login attempts  
 - Generates alert severity (Low / Medium / High)  
-- Provides user-wise summary and risk insights  
+- Provides user-wise summary and insights  
 
 ## 🧠 Detection Logic
 - Login during unusual hours (0–6 AM)  
